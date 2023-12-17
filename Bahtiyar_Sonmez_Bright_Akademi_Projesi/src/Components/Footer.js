@@ -3,7 +3,8 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            buraya footer gelecek        </>
+            buraya footer gelecek
+        </>
     )
 }
 

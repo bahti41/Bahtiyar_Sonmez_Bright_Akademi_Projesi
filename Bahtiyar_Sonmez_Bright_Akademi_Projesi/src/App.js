@@ -2,9 +2,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header';
 import HomePage from './Pages/HomePage/HomePage.js';
-import Footer from './Pages/Footer/Footer.js';
+import Education from './Pages/Instructional/Instructional.js';
+import Contact from './Pages/Contact/Contact.js';
+import Instructional from './Pages/Instructional/Instructional.js';
+import Training from './Pages/Training/Training.js';
+import Footer from './Components/Footer.js';
 import { BauContext } from './Contexts/BauContext.js';
-
 
 function App() {
 
@@ -15,6 +18,10 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/ınstructional" element={<Instructional />} />
+            <Route path="/training" element={<Training />} />
           </Routes>
           <Footer />
         </BrowserRouter>

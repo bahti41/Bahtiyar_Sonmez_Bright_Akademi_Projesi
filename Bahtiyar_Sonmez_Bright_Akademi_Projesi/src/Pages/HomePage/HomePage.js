@@ -4,7 +4,7 @@ import React from 'react';
 const HomePage = () => {
     return (
         <>
-            uraya ana menü gelecek
+            -buraya ana sayfa olacak-
         </>
     )
 }
