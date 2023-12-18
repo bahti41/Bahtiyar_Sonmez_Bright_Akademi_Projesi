@@ -7,8 +7,8 @@ const Header = () => {
         <>
             <Navbar bg='primary' variant='dark' >
                 <Container className='hw-100'>
-                    <NavbarBrand className='container d-flex justify-content-between'>
-                        <NavLink className="nav-link" to="/"><img src="/assets/images/logo/logo.png" alt="logo"></img></NavLink>
+                    <NavbarBrand className='container d-flex justify-content-between align-items-center'>
+                        <NavLink className="nav-link" to="/">BRİGHT AKADAMİ</NavLink>
                         <Nav >
                             <NavLink className="nav-link active" to="/">Home</NavLink>
                             <NavLink className="nav-link" to="/training">Training</NavLink>
