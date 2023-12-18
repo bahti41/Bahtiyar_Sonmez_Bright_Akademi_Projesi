@@ -1,9 +1,15 @@
 import React from 'react'
 
+
 const Footer = () => {
     return (
         <>
-            buraya footer gelecek
+            <footer class="footer">
+                <div class="container text-center">
+                    <span class="text-muted">© 2023
+                        Bright Akademi Website Name</span>
+                </div>
+            </footer>
         </>
     )
 }
