@@ -5,16 +5,16 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-            <Navbar bg='primary' >
-                <Container>
-                    <NavbarBrand>
+            <Navbar bg='primary' variant='dark' >
+                <Container className='hw-100'>
+                    <NavbarBrand className='container d-flex justify-content-between'>
                         <NavLink className="nav-link" to="/"><img src="/assets/images/logo/logo.png" alt="logo"></img></NavLink>
-                        <Nav className='ms-auto' >
-                            <NavLink className="nav-link" to="/">Home</NavLink>
+                        <Nav >
+                            <NavLink className="nav-link active" to="/">Home</NavLink>
                             <NavLink className="nav-link" to="/training">Training</NavLink>
                             <NavLink className="nav-link" to="/ınstructional">Instructional</NavLink>
                             <NavLink className="nav-link" to="/contact">Contact</NavLink>
-                            <NavLink>About</NavLink>
+                            <NavLink className="nav-link" to="/about">About</NavLink>
                         </Nav>
                     </NavbarBrand>
                 </Container>

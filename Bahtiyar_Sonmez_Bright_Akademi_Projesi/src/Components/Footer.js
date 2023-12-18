@@ -1,4 +1,4 @@
-import { MDBContainer, MDBFooter, MDBIcon, MDBBtn } from 'mdb-r eact-ui-kit';
+import { MDBContainer, MDBFooter, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
 import React from 'react';
 
 
@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <>
-            <MDBFooter className='bg-light text-center text-white'>
+            <MDBFooter className='bg-primary text-center text-white'>
                 <MDBContainer className='p-4 pb-0'>
                     <section className='mb-4'>
                         <MDBBtn
@@ -33,7 +33,7 @@ const Footer = () => {
                             floating
                             className='m-1'
                             style={{ backgroundColor: '#dd4b39' }}
-                            href='#!'
+                            href='/'
                             role='button'
                         >
                             <MDBIcon fab icon='google' />
@@ -71,8 +71,8 @@ const Footer = () => {
                 </MDBContainer>
 
                 <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                    © 2023 Copyright:
-                    <a className='text-white' href='https://baubright.com/'>
+
+                    © 2023 Copyright :  <a className='text-white' href='https://baubright.com/'>
                         BAU Bright Akademi
                     </a>
                 </div>
