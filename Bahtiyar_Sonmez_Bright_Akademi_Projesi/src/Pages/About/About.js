@@ -1,20 +1,20 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardImage } from 'mdb-react-ui-kit';
 
 const About = () => {
 
     return (
         <>
-            <div className='bg-primary'>
+            <Container>
+                <div className='bg-primary'>
+                    <MDBCard className='mb-3'>
+                        <MDBCardImage position='top' src='Img/wissen.jpg' alt='' />
+                        <div className='bg-primary p-4'>
+                        </div>
+                    </MDBCard>
 
-                <MDBCard className='mb-3'>
-                    <MDBCardImage position='top' src='Img/wissen.jpg' alt='' />
-                    <div className='bg-primary p-4'>
-                    </div>
-                </MDBCard>
-                <About />
-                <Container>
+
                     <div style={{ height: "95vh" }} className="container text-center text-white ">
                         <div className="row text-center">
                             <div className="col-md12 mb-4">
@@ -49,10 +49,9 @@ const About = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </Container>
-
-            </div >
+                    </div >
+                </div>
+            </Container >
         </>
     )
 }
