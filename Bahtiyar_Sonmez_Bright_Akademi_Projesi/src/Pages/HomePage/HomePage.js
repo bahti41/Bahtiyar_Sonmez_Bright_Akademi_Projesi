@@ -1,37 +1,27 @@
 import React from 'react';
+import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage } from 'mdb-react-ui-kit';
+import About from '../About/About';
+
 
 
 
 const HomePage = () => {
     return (
         <>
-            <div>
-                <header className="bg-primary text-white text-center py-5">
-                    <h1>Bright Akademi Web Sitesi</h1>
-                </header>
-                <div className="container mt-5 text-center mb-3 ">
-                    <div className="row text-center">
-                        <img src="" alt="" />
-                        <div className="col-md-8">
-                            <h2>Get your university-approved certificate and become a leading IT scientist.</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac arcu eu libero
-                                varius suscipit. Ut sed enim sed lacus convallis cursus vel eu justo.
-                            </p>
-                        </div>
+            <div className='bg-primary'>
 
-                        <div className="col-md-4">
-                            <h2>Code Future Technologies with BAU </h2>
-                            <p>
-                                Integer cursus ligula ut neque maximus, sit amet dictum augue fermentum.
-                            </p>
+                <MDBCard className='mb-3'>
+                    <MDBCardImage position='top' src='Img/bright academy2.png' alt='...' />
 
-                        </div>
+                    <div style={{ height: "95vh" }} className="bg-primary text-white d-flex justify-content-center align-items-center flex-column">
+                        <h1 className='display-4 text-center text-white'>Bright Akademi</h1>
+                        <p className='display-4 text-center text-white'>Hoşgeldiniz</p>
+                        <button type="button" class=" mt-2 btn btn-white btn-lg" data-mdb-ripple-init>APPLY</button>
+                        <button type="button" class=" mt-3 btn btn-white btn-lg" data-mdb-ripple-init>CONTACY ME</button>
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg" data-mdb-ripple-init>APPLY</button>
-                    <button type="button" class="btn btn-secondary btn-lg" data-mdb-ripple-init>CONTACY ME</button>
-                </div>
-            </div>
+                </MDBCard>
+                <About />
+            </div >
         </>
     )
 }
