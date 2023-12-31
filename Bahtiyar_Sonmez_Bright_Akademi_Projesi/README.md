@@ -6,4 +6,6 @@ Frontend proje Odevi;
 - "https://create-react-app.dev/docs/getting-started" - "https://react-bootstrap.github.io/docs/getting-started/introduction" - "https://mdbootstrap.com/docs/react/getting-started/installation/" sitelerinden bootstrap, fortawesome, ui-kit in kurulumunu yaptım.
 - Inen klasörde fazlalıkları temizledim.
 - Githup projemi Colobrator yaptım.
-- Loga ve fotograf bularak bir klasör oluşturdum.
+- Loga ve fotograf bularak bir klasör oluşturdum.  
+- Iletisim sayfasına maps olusturmak icin "Add Or Embed A Google Map Location On A React App" sayfasını inceledim.
+- Form yapmak icin React Bootstrapı kullandım. 
