@@ -1,89 +1,51 @@
 import React from 'react'
-import { Row, Col, Card, CardGroup, Button, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom'
 
 
-const Trainings = () => {
+
+
+const UserCard = ({ user }) => (
+    <div style={{ width: '30%', margin: '10px', border: '1px solid #ddd', padding: '10px' }}>
+        <img src={user.photo} alt={user.name} style={{ width: '100%', height: 'auto' }} />
+        <h3>{user.name}</h3>
+        <p>{user.occupation}</p>
+        <p>{user.bio}</p>
+        <Link to={`/userdetail/${user.name}`}>
+            <button>Detayları Gör</button>
+        </Link>
+    </div>
+);
+const Trainings = ({ users }) => {
+
     return (
         <>
-            <Container>
-                <Row className='mt-4 mb-4'>
-                    <Col md={4}>
-                        <Card >
-                            <Card.Img src='Img/Egıtmenler/EngınNıyazı.png' />
-                            <Card.Body>
-                                <Card.Title>Engin NİYAZİ</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <div className='grid'>
-                                    <Button variant="primary">Detaylar</Button>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </Col >
-                    <Col md={4}>
-                        <Card className='g-4'>
-                            <Card.Img src='Img/Egıtmenler/TalutSonmez.png' />
-                            <Card.Body>
-                                <Card.Title>Talut SONMEZ</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <div className='grid'>
-                                    <Button variant="primary">Detaylar</Button>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card className='g-4'>
-                            <Card.Img src='Img/Egıtmenler/NumanDemirhan.png' />
-                            <Card.Body>
-                                <Card.Title>Numan DEMİRHAN</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <div className='grid'>
-                                    <Button variant="primary">Detaylar</Button>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card className='g-4'>
-                            <Card.Img src='Img/Egıtmenler/BılalTunca.png' />
-                            <Card.Body>
-                                <Card.Title>Bilal TUNCA</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <div className='grid'>
-                                    <Button variant="primary">Detaylar</Button>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card className='g-4'>
-                            <Card.Img src='Img/Egıtmenler/EnesTunca.png' />
-                            <Card.Body>
-                                <Card.Title>Enes TUNCA</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <div className='grid'>
-                                    <Button variant="primary">Detaylar</Button>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </Col >
-                </Row>
-            </Container>
+            <Container fluid>
+                <div className='mb-5'>
+                    <h2 className='d-flex justify-content-center align-items-center m-4'>Türkiyenin İleri Gelen Egitimcileri</h2>
+                    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                        {users.map((user) => (
+                            <UserCard key={user.id} user={user} />
+                        ))}
+                    </div>
+                </div>
+            </Container >
+            {/* <Container>
+                <div style={{ width: '30%', margin: '10px', border: '1px solid black', padding: '10px' }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                        {users.map((user) => (
+                            <div key={user.id} className="user-card">
+                                <img src={user.photo} alt={user.name} style={{ width: '100%', height: 'auto' }} />
+                                <h3>{user.name}</h3>
+                                <Link to={`/userdetail/${user.id}`}>
+                                    <button className='mb-3'>Detaylar</button>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </Container> */}
         </>
     )
 }
