@@ -13,7 +13,7 @@ const Contact = () => {
                     <Row>
                         <Col xs={12}>
                             <CardHeader className='d-flex justify-content-center align-items-center display-6 m-5 text-white'>
-                                BİZİMLE İLETİSİME GECİN!!
+                                BİZİMLE İLETİSİME GECİN
                             </CardHeader>
                         </Col>
                     </Row>
