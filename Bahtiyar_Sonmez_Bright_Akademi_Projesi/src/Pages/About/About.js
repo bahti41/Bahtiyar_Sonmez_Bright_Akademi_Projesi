@@ -1,20 +1,15 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
-import { MDBCard, MDBCardImage } from 'mdb-react-ui-kit';
+import { Card, CardImg } from 'react-bootstrap'
+import './About.css'
 
 const About = () => {
 
     return (
         <>
             <div className='bg-primary'>
-                <MDBCard className='mb-3'>
-                    <MDBCardImage position='top' src='Img/hakkımızda.png' alt='' />
-                    <div className='bg-primary p-4'>
-                    </div>
-                </MDBCard>
 
-
-                <div style={{ height: "95vh" }} className="container d-flex justify-content-center align-items-center flex-column text-white">
+                <CardImg position='top' src='Img/hakkımızda.png' alt='hakkında' />
+                <div style={{ height: "95vh" }} className="d-flex justify-content-center align-items-center flex-column text-White">
                     <div className="row text-center">
                         <div className="col-md12 mb-4">
                             <h2 className='display-2'>BAU Bright Nedir?</h2>
@@ -49,6 +44,7 @@ const About = () => {
                         </div>
                     </div>
                 </div >
+
             </div>
         </>
     )

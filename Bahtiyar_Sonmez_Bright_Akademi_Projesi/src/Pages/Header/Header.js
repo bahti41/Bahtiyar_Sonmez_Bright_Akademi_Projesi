@@ -7,14 +7,13 @@ const Header = () => {
         <>
             <Navbar bg='primary' variant='dark' >
                 <Container>
-                    <NavbarBrand className='container d-flex justify-content-between align-items-center '>
+                    <NavbarBrand className='container d-flex justify-content-between align-items-center text-White '>
                         <Link className="nav-link" to="/">BRİGHT AKADAMİ</Link>
                         <Nav >
                             <Link className="nav-link active" to="/">Ana Sayfa</Link>
                             <Link className="nav-link" to="/trainings">Eğitmenler</Link>
                             <Link className="nav-link" to="/contact">İletişim</Link>
                             <Link className="nav-link" to="/about">Hakkında</Link>
-                            <Link className="nav-link" to="/ınstructors">Eğitim Paketleri</Link>
                         </Nav>
                     </NavbarBrand>
                 </Container>

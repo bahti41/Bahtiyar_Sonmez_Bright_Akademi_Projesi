@@ -1,0 +1,20 @@
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media-icons a {
+    display: flex;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
