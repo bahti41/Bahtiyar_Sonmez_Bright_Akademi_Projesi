@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card-info h2,
+.card-info p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.card-info h2 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.card-info p {
+    color: #666;
+    font-size: 1em;
+}

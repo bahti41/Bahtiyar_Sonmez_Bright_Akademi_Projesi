@@ -12,6 +12,8 @@ const Header = () => {
                         <Nav >
                             <Link className="nav-link active" to="/">Ana Sayfa</Link>
                             <Link className="nav-link" to="/trainings">Eğitmenler</Link>
+                            <Link className="nav-link" to="/educationalPackagesList">Egitim Paketleri</Link>
+
                             <Link className="nav-link" to="/contact">İletişim</Link>
                             <Link className="nav-link" to="/about">Hakkında</Link>
                         </Nav>

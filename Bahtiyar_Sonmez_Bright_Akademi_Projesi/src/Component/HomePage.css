@@ -1,0 +1,53 @@
+.bg-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bg-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+}
+
+.title {
+    color: #4CAF50;
+    font-size: 2em;
+
+}
+
+.welcome {
+    color: #4CAF50;
+    font-size: 1.5em;
+
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn-about,
+.btn-contact {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-about:hover,
+.btn-contact:hover {
+    background-color: #45a049;
+
+}

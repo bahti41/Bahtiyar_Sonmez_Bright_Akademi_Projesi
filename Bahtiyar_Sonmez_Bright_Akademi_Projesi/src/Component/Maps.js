@@ -7,9 +7,9 @@ function Maps() {
             width="100%"
             height="700"
             style={{ border: "0" }}
-            allowFullScreen // CamelCase kullanımı
+            allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade" // CamelCase kullanımı
+            referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
     );
 }

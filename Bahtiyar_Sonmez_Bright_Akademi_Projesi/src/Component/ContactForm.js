@@ -6,39 +6,39 @@ const ContactFrom = () => {
         <Form>
             <Row className="m-3">
                 <Form.Group as={Col} controlId="formName">
-                    <Form.Label>Ad Soyad</Form.Label> {/* Düzeltildi */}
+                    <Form.Label>Ad Soyad</Form.Label>
                     <Form.Control type="text" placeholder="Adınız ve soyadınız" />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formMail">
-                    <Form.Label>Mail</Form.Label> {/* Düzeltildi */}
+                    <Form.Label>Mail</Form.Label>
                     <Form.Control type="email" placeholder="email@example.com" />
                 </Form.Group>
             </Row>
 
             <Form.Group className="m-3" controlId="formAddress1">
-                <Form.Label>Adres</Form.Label> {/* Düzeltildi */}
+                <Form.Label>Adres</Form.Label>
                 <Form.Control placeholder="Adresiniz" />
             </Form.Group>
 
             <Form.Group className="m-3" controlId="formAddress2">
-                <Form.Label>Adres 2</Form.Label> {/* Düzeltildi */}
+                <Form.Label>Adres 2</Form.Label>
                 <Form.Control placeholder="İkincil adres (isteğe bağlı)" />
             </Form.Group>
 
             <Row className="m-3">
                 <Form.Group as={Col} controlId="formCity">
-                    <Form.Label>İl</Form.Label> {/* Düzeltildi */}
+                    <Form.Label>İl</Form.Label>
                     <Form.Control placeholder="İl" />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formSemt">
-                    <Form.Label>İlçe</Form.Label> {/* Düzeltildi */}
+                    <Form.Label>İlçe</Form.Label>
                     <Form.Control placeholder="İlçe" />
                 </Form.Group>
 
                 <Form.Group as={Col} className="mb-3" controlId="formTell">
-                    <Form.Label>Telefon</Form.Label> {/* Düzeltildi */}
+                    <Form.Label>Telefon</Form.Label>
                     <Form.Control type="tel" placeholder="Telefon numaranız" />
                 </Form.Group>
             </Row>
