@@ -6,24 +6,18 @@ import ContactForm from './ContactForm';
 const Contact = () => {
     return (
         <div className='bg-primary' style={{ height: "100%" }}>
-            <Card className='bg-primary'>
-                <Row>
-                    <Col xs={12}>
-                        <CardHeader className='d-flex justify-content-center align-items-center display-6 m-5 text-succsess'>
-                            BİZİMLE İLETİŞİME GEÇİN
-                        </CardHeader>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs={12} md={6}>
-                        <Maps />
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <ContactForm />
-                    </Col>
-                </Row>
-            </Card>
-        </div>
+            <div className='d-flex justify-content-center align-items-center display-6 m-5 py-5 text-succsess'>
+                BİZİMLE İLETİŞİME GEÇİN
+            </div>
+            <Row>
+                <Col xs={12} md={6} >
+                    <Maps />
+                </Col>
+                <Col xs={12} md={6}>
+                    <ContactForm />
+                </Col>
+            </Row>
+        </div >
     );
 }
 

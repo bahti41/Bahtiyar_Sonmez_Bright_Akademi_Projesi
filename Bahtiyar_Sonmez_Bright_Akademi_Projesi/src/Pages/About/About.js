@@ -10,7 +10,7 @@ const About = () => {
 
                 <CardImg position='top' src='Img/hakkımızda.png' alt='hakkında' />
                 <div style={{ height: "95vh" }} className="d-flex justify-content-center align-items-center flex-column text-White">
-                    <div className="row text-center">
+                    <div className="row text-center text-white">
                         <div className="col-md12 mb-4">
                             <h2 className='display-2'>BAU Bright Nedir?</h2>
                             <p>

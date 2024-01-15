@@ -1,27 +1,30 @@
 import React from 'react'
 import { Container, Nav, Navbar, NavbarBrand } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import './Header.css';
 const Header = () => {
     return (
         <>
-            <Navbar bg='primary' variant='dark' >
+            <Navbar expand="lg" className="bg-primary">
                 <Container>
-                    <NavbarBrand className='container d-flex justify-content-between align-items-center text-White '>
-                        <Link className="nav-link" to="/">BRİGHT AKADAMİ</Link>
-                        <Nav >
-                            <Link className="nav-link active" to="/">Ana Sayfa</Link>
-                            <Link className="nav-link" to="/trainings">Eğitmenler</Link>
-                            <Link className="nav-link" to="/educationalPackagesList">Egitim Paketleri</Link>
-
-                            <Link className="nav-link" to="/contact">İletişim</Link>
-                            <Link className="nav-link" to="/about">Hakkında</Link>
+                    <img src="/Img/logo.png" alt="logo" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="m-auto">
+                            <Nav.Link href="/">Ana Sayfa</Nav.Link>
+                            <Nav.Link href="/trainings">Eğitmenler</Nav.Link>
+                            <Nav.Link href="/educationalPackagesList">Egitim Paketleri</Nav.Link>
+                            <Nav.Link href="/contact">İletişim</Nav.Link>
+                            <Nav.Link href="/about">Hakkında</Nav.Link>
                         </Nav>
-                    </NavbarBrand>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
+
         </>
     )
 }
 
 export default Header;
+
+
