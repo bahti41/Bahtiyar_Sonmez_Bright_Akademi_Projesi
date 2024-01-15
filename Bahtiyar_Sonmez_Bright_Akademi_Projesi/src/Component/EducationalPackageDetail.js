@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { OgretmenlerContext } from '../Context/OgretmenlerContext';
-import { Card, } from 'react-bootstrap';
+
 
 
 const EducationalPackageDetail = () => {

@@ -12,6 +12,9 @@ import OgretmenDetay from './Pages/OgretmenDetay.js';
 import EducationalPackagesList from './Component/EducationalPackagesList.js';
 import EducationalPackageDetail from './Component/EducationalPackageDetail.js';
 
+
+
+
 function App() {
 
 
