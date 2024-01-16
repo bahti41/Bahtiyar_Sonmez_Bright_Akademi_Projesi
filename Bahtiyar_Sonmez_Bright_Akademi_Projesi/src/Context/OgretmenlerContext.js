@@ -23,8 +23,46 @@ export const OgretmenlerProvider = ({ children }) => {
             id: 3, ımge: '/Img/EgitimPaket/sistem ve ag yönetim egitimi.jpg', egtm: "Full Stack Programlama", blog: "Bu program, IT altyapısının planlanmasından, kurulumundan ve sürekli bakımından sorumlu profesyoneller yetiştirmeyi hedefler. Eğitim, temel bilgisayar bilimleri konseptlerinin ötesine geçerek, katılımcıların gerçek dünya problemlerini çözme becerilerini geliştirir.", why: "Sistem yönetimi, bir organizasyonun bilgisayar sistemlerinin etkin bir şekilde çalışmasını sağlamakla ilgilidir. Sistem yöneticileri, sunucuların, masaüstü ve mobil cihazların, ve bu cihazlara yüklenmiş yazılımların günlük işletiminden sorumludur."
         },
     ]);
+    const [serviceData, setServiceData] = useState([
+        {
+            id: 1,
+            icon: 'fas fa-clone',
+            title: 'Etkileşimli Öğrenme Platformu',
+            desc: 'Temel programlama kavramlarından en ileri yazılım teknolojilerine kadar her şeyi kapsayan interaktif kurslarımıza dalın. Müfredatımız, gerçek dünya uygulanabilirliğini sağlamak için sektör uzmanları tarafından hazırlandı.',
+        },
+        {
+            id: 2,
+            icon: 'fas fa-snowflake',
+            title: 'Birebir Mentorluk',
+            desc: 'Deneyimli geliştiricilerden kişisel rehberlik alın. Mentorluk programımız, sorunları çözmenize yardımcı olmak ve öğrenme sürecinizi hızlandırmak için size profesyonellerle eşleştirme yapıyor.'
+        },
+        {
+            id: 3,
+            icon: 'fas fa-plug',
+            title: 'Proje Tabanlı Eğitim',
+            desc: 'Pratik deneyim, yaklaşımımızın kalbidir. Gerçek yaşam projeleri üzerinde çalışarak becerilerinizi uygulamanızı ve derin bir anlayış kazanmanızı sağlayarak teknoloji sektöründeki gerçek iş için hazırlarız.'
+        },
+        {
+            id: 4,
+            icon: 'fas fa-destop',
+            title: 'Sertifika Hazırlığı',
+            desc: 'Tanınmış bir sertifikasyon için mi hedefliyorsunuz yoksa belirli bir teknoloji yığınını mı ustalaştırmak istiyorsunuz? Hedef odaklı eğitim modüllerimiz, başarılı olmanıza yardımcı olmak için tasarlandı.'
+        },
+        {
+            id: 5,
+            icon: 'fas fa-trophy',
+            title: 'Kurumsal Eğitim Çözümleri',
+            desc: 'Çalışanlarınızın becerilerini geliştirmek isteyen kuruluşlar için özel eğitim programları sunuyoruz. Kurumsal çözümlerimiz, şirketinizin özel teknolojik ihtiyaçlarına ve stratejik hedeflerine uyum sağlamak üzere özelleştirildi.'
+        },
+        {
+            id: 6,
+            icon: 'fas fa-life-ring',
+            title: 'Topluluk Etkinlikleri',
+            desc: 'Hackathonlar, kodlama mücadeleleri ve webinarlar aracılığıyla aynı düşünce yapısına sahip kişilerin ağına katılın. Topluluk etkinliklerimiz, öğrenme, ağ kurma ve yenilik için harika fırsatlardır.'
+        },
+    ]);
     return (
-        <OgretmenlerContext.Provider value={{ ogretmenler, setOgretmenler, packages, setPackages }}>
+        <OgretmenlerContext.Provider value={{ ogretmenler, setOgretmenler, packages, setPackages, serviceData, setServiceData }}>
             {children}
         </OgretmenlerContext.Provider>
     );

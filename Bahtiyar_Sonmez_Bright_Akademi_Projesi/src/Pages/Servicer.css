@@ -1,0 +1,61 @@
+.title-holder {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.title-holder h2,
+.title-holder .subtitle {
+    padding-top: 30px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 1.2em;
+    margin-bottom: 70px;
+}
+
+.main-blog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+
+.main .service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.service-item .header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.service-item .icon-action {
+    font-size: 2em;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+
+}
+
+.service-item p {
+    padding: 15px;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}

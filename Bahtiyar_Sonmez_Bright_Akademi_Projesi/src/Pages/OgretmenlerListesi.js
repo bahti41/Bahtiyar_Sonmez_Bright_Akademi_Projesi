@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { OgretmenlerContext } from '../Context/OgretmenlerContext';
 import './OgretmenlerListesi.css'
+import Servicers from './Servicers';
 
 const OgretmenlerListesi = () => {
     const { ogretmenler } = useContext(OgretmenlerContext);
@@ -24,6 +25,9 @@ const OgretmenlerListesi = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div>
+                    <Servicers />
                 </div>
             </div>
         </>
