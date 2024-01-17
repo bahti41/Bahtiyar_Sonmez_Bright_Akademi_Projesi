@@ -28,7 +28,7 @@ const HomePage = () => {
                 <Container fluid>
                     <section className='about'>
                         <div className='title'>
-                            <div className='subtitle d-flex justify-content-center py-5'>Learn more about us</div>
+                            <div className='subtitle d-flex justify-content-center py-5'>Bizim Hakkımızda Daha Fazla Bilgi Edinin</div>
                             <Row className='main'>
                                 <Col xs={12} md={6}  >
                                     <img
@@ -40,8 +40,8 @@ const HomePage = () => {
                                 </Col>
                                 <Col xs={12} md={6} >
                                     <div className='about-title'>
-                                        <h5>Welcome to our platform, where we offer comprehensive software education. Our mission is to empower aspiring developers with the latest programming skills. From beginner to advanced levels, we provide a range of courses tailored to help you excel in the tech industry.</h5>
-                                        <h5> Our expert instructors are industry veterans committed to fostering your growth. Join us to start your journey in coding and become a part of the innovative world of technology.</h5>
+                                        <h5>Platformumuza hoş geldiniz, burada en son programlama becerileri ile donanmış olmanız için kapsamlı yazılım eğitimi sunuyoruz. Başlangıçtan ileri seviyeye kadar, teknoloji endüstrisinde başarılı olmanıza yardımcı olacak çeşitli kurslar sunuyoruz.</h5>
+                                        <h5>Uzman eğitmenlerimiz, endüstri profesyonelleri olup, büyümenizi teşvik etmeye kendilerini adamıştır. Kodlamaya başlamak ve teknolojinin yenilikçi dünyasının bir parçası olmak için bize katılın.</h5>
 
                                         <div className='progress-block'>
                                             <h4>HTML / CSS / JAVASCRIPT</h4>
