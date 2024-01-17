@@ -8,7 +8,7 @@ export const OgretmenlerProvider = ({ children }) => {
     const [ogretmenler, setOgretmenler] = useState([
 
         { id: 1, name: 'Engin Niyazi', occupation: 'Bilgisayar Mühendisi', blog: 'Merhaba! Ben Engin Niyazi, bir yazılımcıyım ve teknolojiye olan tutkum beni her zaman yeni şeyler öğrenmeye yönlendiriyor. Yazılım dünyasındaki yenilikleri takip etmek ve projeler geliştirmek beni heyecanlandırıyor.', img: '/Img/Egıtmenler/EngınNıyazı.png' },
-        { id: 2, name: 'Talut Sönmez', occupation: 'Back-End Developer', blog: 'Selam! Ben Talut Sönmez, bir yazılımcıyım ve kod yazmayı seviyorum. En sevdiğim teknolojiler arasında JavaScript, React ve Node.js bulunuyor. Sizlere daha fazla yazılım dünyasından paylaşımlar yapmak için buradayım!', img: '/Img/Egıtmenler/Talutsonmez.png' },
+        { id: 2, name: 'Talut Sönmez', occupation: 'Back-End Developer', blog: 'Selam! Ben Talut Sönmez, bir yazılımcıyım ve kod yazmayı seviyorum. En sevdiğim teknolojiler arasında JavaScript, React ve Node.js bulunuyor. Sizlere daha fazla yazılım dünyasından paylaşımlar yapmak için buradayım!', img: '/Img/Egıtmenler/TalutSonmez.png' },
         { id: 3, name: 'Numan Demirhan', occupation: 'Front end Developer', blog: 'Selam! Numan Demirhan burada. Yazılım dünyası benim için sadece bir iş değil, aynı zamanda bir tutku. Her gün yeni bir şey öğrenmek ve bu öğrendiklerimi uygulamak benim için heyecan verici.', img: '/Img/Egıtmenler/NumanDemirhan.png' },
     ]);
 
